@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400&display=swap");
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease-out;
+}
+body {
+  background-color: #e8e8e8;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 7px 75px;
+  background-color: #8d0003;
+  color: whitesmoke;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  color: #8d0003;
+  font-weight: bold;
+}
+
+.frontpage {
+  background-image: url("../imglasha/fasad.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Frontpage Navbar  */
+
+#logo1 {
+  display: flex;
+  position: absolute;
+  height: 100px;
+  left: 1.25rem;
+  padding-top: 20px;
+}
+
+.navbar {
+  padding-top: 14.5px;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar #navbarmain li a {
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+.navbar #navbarmain li a:hover {
+  color: #8d0003;
+  font-size: 17px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+
+li {
+  list-style: none;
+}
+.social {
+  display: inline-block;
+  position: absolute;
+  right: 1.25rem;
+}
+
+.social img {
+  margin-right: 8px;
+  margin-left: 4px;
+}
+
+.social li {
+  height: 30px;
+}
+
+.social #fb,
+#ig {
+  height: 22px;
+  opacity: 0.75;
+  margin-top: 3px;
+}
+
+.social #lnkd {
+  height: 24px;
+  opacity: 0.75;
+  margin-top: 3px;
+}
+
+.social #git {
+  height: 35px;
+  padding-bottom: 5px;
+  opacity: 0.75;
+}
+.logo_img {
+  transform: scale(1.3);
+}
+
+a img:hover {
+  cursor: pointer;
+  filter: invert();
+}
+
+/* Frontpage Content */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 715px;
+  font-size: 40px;
+  /* padding-left: 300px;
+  padding-right: 300px; */
+  padding-bottom: 495px;
+  font-weight: bolder;
+  color: #943a3a;
+  align-items: center;
+  justify-content: center;
+}
+
+#contentsum1 {
+  color: #943a3a;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  padding-top: 12px;
+  font-weight: bolder;
+}
+
+/* Kitchen */
+
+.kitchen #intro {
+  text-align: center;
+  font-size: 50px;
+  margin: 18px;
+}
+
+.kitchen #sum1,
+#sum2 {
+  text-align: center;
+  font-size: 18px;
+  color: #8d0003;
+  margin: 18px;
+}
+
+.kitchen #sum2 {
+  font-size: 15px;
+  padding-bottom: 12px;
+}
+
+.foodcolumn .fooddesc {
+  color: #8d0003;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+.fooddesc {
+  margin-top: 5px;
+}
+.foodcolumn div:hover {
+  background-color: rgba(240, 240, 240, 0.945);
+  /* border: 2px solid red; */
+  border-radius: 34px;
+}
+
+/* Rooms */
+
+.rooms #rintro {
+  text-align: center;
+  font-size: 50px;
+  margin: 18px;
+}
+
+.rooms #rsum1,
+#rsum2 {
+  text-align: center;
+  font-size: 18px;
+  margin: 18px;
+  color: #8d0003;
+}
+.flag {
+  cursor: pointer;
+}
+
+.rooms #rsum2 {
+  font-size: 15px;
+  padding-bottom: 12px;
+}
+
+/* Room Details   */
+
+.roomspic {
+  /* border: 2px solid red; */
+  display: flex;
+}
+
+.roomspic img {
+  width: 47%;
+  padding: 30px;
+}
+
+.rdesc {
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 32px;
+  padding-right: 22px;
+  font-size: 18px;
+}
+
+#r1,
+#r3 {
+  flex-direction: row;
+}
+
+#r2,
+#r4 {
+  flex-direction: row-reverse;
+}
+
+/* ABout Us */
+
+.aboutpic {
+  position: relative;
+}
+
+.aboutpic::before {
+  content: "";
+  background: rgb(233, 233, 233);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.about #aintro {
+  text-align: center;
+  font-size: 50px;
+  margin: 18px;
+}
+
+.about #asum1,
+#asum2 {
+  text-align: center;
+  font-size: 18px;
+  color: #8d0003;
+  margin: 18px;
+}
+
+.about #asum2 {
+  font-size: 15px;
+  padding-bottom: 12px;
+}
+
+.aboutpic {
+  /* border: 2px solid red; */
+  display: flex;
+}
+
+.aboutpic img {
+  width: 50%;
+  padding: 30px;
+  transform: scaley(0.7);
+}
+
+.adesc {
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 96px;
+  font-size: 18px;
+}
+
+.aboutpic .btn {
+  display: flex;
+  justify-content: left;
+}
+
+/* contact Us */
+
+.contdata {
+  position: relative;
+}
+
+.contdata::before {
+  content: "";
+  background: url(../socials/contact.jpg) no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.contact #cintro {
+  text-align: center;
+  font-size: 30px;
+  margin: 18px;
+}
+#cintro {
+  font-family: "Open Sans";
+  font-weight: 50;
+  max-width: 100%;
+}
+
+.contact #csum1,
+#csum2 {
+  text-align: center;
+  font-size: 18px;
+  margin: 18px;
+  margin-top: 0;
+  color: #8d0003;
+}
+
+.contact #csum2 {
+  font-size: 15px;
+  padding-bottom: 12px;
+}
+.contactimg {
+  height: 25px;
+  width: 25px;
+}
+#fmail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.contdata {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contdata {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 22px;
+  margin-top: 52px;
+}
+
+form input {
+  margin: 4px;
+  padding: 4px;
+}
+
+.cdesc {
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.contdata .btn {
+  display: flex;
+  justify-content: center;
+}
+.dev {
+  color: white;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 5px;
+}
+.contdata form div {
+  padding: 4.5px;
+}
+
+/* Footer  */
+
+footer {
+  background-color: #8d0003;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 35px;
+  padding-top: 7px;
+}
+.reserve {
+  color: black;
+  background-color: white;
+  position: fixed;
+  right: 1vw;
+  top: 30px;
+  /* transition: transform 0.3s ease-out; */
+}
+.contactInfo {
+  background-color: #ddd;
+}
+.div_for_dishes img {
+  width: 325px;
+  height: 27vh;
+  border-radius: 27%;
+}
+.div_for_dishes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 29.5;
+}
+.img {
+  max-width: 100%;
+  height: 100%;
+}
+.adjara_food {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  column-gap: 15px;
+}
+#potatoe {
+  height: 27vh;
+}
+#borano {
+  height: 27vh;
+}
+.adjarian_khatchapuri {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.adjarian_khatchapuri img {
+  border-radius: 27%;
+  margin-bottom: 5px;
+}
+.ifram {
+  border-radius: 20px;
+}
+iframe {
+  border-radius: 10px;
+  width: 70vw;
+}
+.foot_info {
+  overflow: hidden;
+  display: flex;
+
+  justify-content: center;
+  margin-left: 20px;
+  /* margin-right: 40px; */
+}
+.lang_icons {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.navbarmain {
+  padding: 12px;
+}
+.language_list {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  height: 15px;
+  width: 50px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.rand {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.block {
+  display: flex;
+}
+.liststyle,
+.about_list_li {
+  list-style: square;
+}
+.info_list {
+  padding-left: 35px;
+}
+.about_text {
+  text-align: left;
+}
+.about_list {
+  padding-left: 23px;
+}
+.about_more {
+  padding-left: 30px;
+}
+.hidden {
+  display: none;
+}
+
+.active_eng {
+  display: flex;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.active_rus {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.eng_flag,
+.rus_flag,
+.geo_flag {
+  margin-right: 5px;
+}
+.hamburger {
+  display: none;
+}
+@media (min-width: 678px) {
+  .mobile_div_top {
+    display: none;
+  }
+}
