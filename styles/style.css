@@ -539,11 +539,19 @@ a {
 .geo_flag {
   margin-right: 5px;
 }
-.hamburger {
+.hamburger,
+.lang_icons,
+.navbar {
   display: none;
 }
-@media (min-width: 678px) {
+@media (min-width: 768px) {
   .mobile_div_top {
     display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .navbar {
+    display: flex;
   }
 }
