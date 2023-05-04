@@ -27,10 +27,11 @@
   }
   .foot_info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 0;
+    flex-wrap: wrap;
   }
 }
 
@@ -73,6 +74,12 @@
     justify-content: center;
     left: 13px;
   }
+  #r1,
+  #r2,
+  #r3,
+  #r4 {
+    flex-direction: column;
+  }
 }
 /* Kitchen */
 
@@ -107,10 +114,8 @@
 /* Rooms */
 
 #r1,
-#r2,
-#r3,
-#r4 {
-  flex-direction: column;
+#r3 {
+  flex-direction: row;
 }
 
 .rdesc {
@@ -124,21 +129,21 @@
 }
 
 .rooms img {
-  width: 90%;
   border-radius: 12px;
   padding: 0;
   margin-bottom: 17px;
-  margin-right: 20vh;
-  margin-left: 20vh;
 }
-
+#r2,
+#r4 {
+  flex-direction: row-reverse;
+}
 .rooms .btn {
   margin-bottom: 30px;
 }
 /*About */
 
 .aboutpic img {
-  width: 100%;
+  width: 50%;
   padding: 30px;
 }
 
@@ -162,10 +167,32 @@
 footer {
   font-size: small;
 }
-
-@media screen and (max-width: 460px) {
-  footer {
-    font-size: smaller;
-    height: 45px;
+.aboutpic {
+  display: flex;
+  flex-direction: row;
+}
+.li_img_divv  {
+  width: 60%;
+  height: 80%;
+}
+.adesc {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .aboutpic {
+    display: flex;
+    flex-direction: column;
+  }
+  #r1,
+  #r2,
+  #r3,
+  #r4 {
+    flex-direction: column;
+  }
+  .roomspic img {
+    width: 100%;
+  }
+  .aboutpic img {
+    width: 100%;
   }
 }

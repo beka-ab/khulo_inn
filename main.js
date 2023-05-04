@@ -8,6 +8,7 @@ const geolang = document.querySelector(".geo");
 const hamburger = document.querySelector(".hamburger");
 const navmenu = document.querySelector(".hamburger_info ");
 const mobileLanguage = document.querySelector(".lang_icons_mobile");
+const sendMail = document.querySelector(".mail");
 window.addEventListener(
   "scroll",
   () => {
