@@ -55,6 +55,14 @@ button:hover {
   justify-content: center;
   column-gap: 15px;
 }
+@media (min-width: 925px) {
+  .navbar {
+    column-gap: 155px;
+  }
+  #navbarmain {
+    column-gap: 5%;
+  }
+}
 
 .navbar ul {
   list-style: none;
@@ -225,6 +233,12 @@ a img:hover {
   padding-right: 22px;
   font-size: 18px;
 }
+.roomspic img:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: 0.4s;
+  border-bottom: #8d0003 solid;
+}
 
 #r1,
 #r3 {
@@ -351,7 +365,9 @@ form input {
   margin: 4px;
   padding: 4px;
 }
-
+.aboutrus {
+  display: flex;
+}
 .cdesc {
   flex-direction: column;
   padding: 20px;
