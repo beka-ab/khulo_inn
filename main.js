@@ -8,11 +8,12 @@ const geolang = document.querySelector(".geo");
 const hamburger = document.querySelector(".hamburger");
 const navmenu = document.querySelector(".hamburger_info ");
 const mobileLanguage = document.querySelector(".lang_icons_mobile");
+const sendMail = document.querySelector(".mail");
 window.addEventListener(
   "scroll",
   () => {
     const scrollTop =
-      window.pageYOffset * 0.1 || document.documentElement.scrollTop * 0.1;
+      window.pageYOffset * 0.02 || document.documentElement.scrollTop * 0.1;
     reserveBtn.style.transform = `translateY(${scrollTop}px)`;
   },
   { passive: true }

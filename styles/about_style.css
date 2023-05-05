@@ -33,7 +33,7 @@ button:hover {
 }
 
 .frontpage {
-  position: relative;
+  /* position: relative; */
   background: url(../img/aboutpage.jpg) no-repeat;
   background-size: cover;
   opacity: 0.91;
@@ -41,7 +41,7 @@ button:hover {
 
 .frontpage::before {
   content: "";
-  position: absolute;
+  /* position: absolute; */
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.49);
@@ -52,7 +52,7 @@ button:hover {
 
 #logo1 {
   display: flex;
-  position: absolute;
+  /* position: absolute; */
   height: 100px;
   left: 1.25rem;
   padding-top: 20px;
@@ -92,7 +92,7 @@ button:hover {
 
 .social {
   display: inline-block;
-  position: absolute;
+  /* position: absolute; */
   right: 1.25rem;
 }
 

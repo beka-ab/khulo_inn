@@ -53,6 +53,15 @@ button:hover {
   align-items: center;
   width: 100%;
   justify-content: center;
+  column-gap: 15px;
+}
+@media (min-width: 925px) {
+  .navbar {
+    column-gap: 155px;
+  }
+  #navbarmain {
+    column-gap: 5%;
+  }
 }
 
 .navbar ul {
@@ -224,6 +233,12 @@ a img:hover {
   padding-right: 22px;
   font-size: 18px;
 }
+.roomspic img:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: 0.4s;
+  border-bottom: #8d0003 solid;
+}
 
 #r1,
 #r3 {
@@ -236,19 +251,6 @@ a img:hover {
 }
 
 /* ABout Us */
-
-.aboutpic {
-  position: relative;
-}
-
-.aboutpic::before {
-  content: "";
-  background: rgb(233, 233, 233);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-}
 
 .about #aintro {
   text-align: center;
@@ -269,15 +271,9 @@ a img:hover {
   padding-bottom: 12px;
 }
 
-.aboutpic {
-  /* border: 2px solid red; */
-  display: flex;
-}
-
 .aboutpic img {
   width: 50%;
   padding: 30px;
-  transform: scaley(0.7);
 }
 
 .adesc {
@@ -333,8 +329,11 @@ a img:hover {
   padding-bottom: 12px;
 }
 .contactimg {
-  height: 25px;
-  width: 25px;
+  height: 50px;
+  width: 50px;
+}
+.contactimg:hover {
+  filter: invert();
 }
 #fmail {
   display: flex;
@@ -366,7 +365,9 @@ form input {
   margin: 4px;
   padding: 4px;
 }
-
+.aboutrus {
+  display: flex;
+}
 .cdesc {
   flex-direction: column;
   padding: 20px;
@@ -412,7 +413,7 @@ footer {
   background-color: white;
   position: fixed;
   right: 1vw;
-  top: 30px;
+  top: 40px;
   /* transition: transform 0.3s ease-out; */
 }
 .contactInfo {
@@ -428,6 +429,7 @@ footer {
   flex-direction: column;
   align-items: center;
   height: 29.5;
+  width: 33.3%;
 }
 .img {
   max-width: 100%;
@@ -470,7 +472,11 @@ iframe {
 
   justify-content: center;
   margin-left: 20px;
+  flex-wrap: wrap;
   /* margin-right: 40px; */
+}
+.contactimg {
+  cursor: pointer;
 }
 .lang_icons {
   display: flex;
@@ -539,11 +545,32 @@ a {
 .geo_flag {
   margin-right: 5px;
 }
-.hamburger {
+.mobile_div_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+.hamburger_info,
+.lang_icons,
+.navbar {
   display: none;
 }
-@media (min-width: 678px) {
+.up_arrow {
+  height: 52px;
+  width: 52px;
+}
+.up_div {
+  display: flex;
+  align-items: flex-end;
+}
+@media (min-width: 768px) {
   .mobile_div_top {
     display: none;
+  }
+  .hamburger,
+  .lang_icons,
+  .navbar {
+    display: flex;
   }
 }
